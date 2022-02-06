@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import react, {useState} from 'react';
+import ButtonComp from './component/ButtonComp'
 import './App.css';
 
 function App() {
+
+  const [counter , setCounter] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Counter App</h1>
+      <span className='text'>{counter}</span>
+      <ButtonComp counter = {counter}  action = {setCounter}/>
+      
     </div>
   );
 }
