@@ -1,30 +1,22 @@
 import react, {useState} from 'react';
+import { Link } from "react-router-dom";
 import ButtonComp from './component/ButtonComp'
 import { Routes ,Route } from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
+import About from './screen/About';
+import Counter from './screen/Counter';
 import './App.css';
-import Menu from './Menu'
+
 
 function App() {
 
-  const [counter , setCounter] = useState(0)
-
   return (
     <>
-    <Menu />
+    <Link to='/'> About </Link>
+    <Link to='/counter'> Counter </Link>
     <Routes>
       <Route path='/' element= {<About />}/>
-      <Route path='/contact' element= {<Contact />}/>
+      <Route path='/counter' element= {<Counter />}/>
     </Routes>
-    {/* <About />
-    <Contact /> */}
-    <div className='App'>
-      <h1>Counter App</h1>
-      <span className='text'>{counter}</span>
-      <ButtonComp counter = {counter}  action = {setCounter}/>
-      
-    </div>
     </>
   );
 }
