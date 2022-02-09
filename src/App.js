@@ -6,7 +6,6 @@ import About from './screen/About';
 import Counter from './screen/Counter';
 import './App.css';
 
-
 function App() {
 
   return (
