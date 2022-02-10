@@ -15,7 +15,7 @@ const About = () => {
             <CardComp />
             <CardComp />
             </div>
-            <NavButton />
+            <NavButton className="button"/>
         </div>
         </>
         

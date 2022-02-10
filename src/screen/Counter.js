@@ -1,6 +1,7 @@
 import React , {useState} from "react";
 import ButtonComp from "../component/ButtonComp";
 
+
 const Counter = () => {
     
         const [counter , setCounter] = useState(0)
