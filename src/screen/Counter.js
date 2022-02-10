@@ -1,5 +1,6 @@
 import React , {useState} from "react";
 import ButtonComp from "../component/ButtonComp";
+import './Counter.css';
 
 
 const Counter = () => {
@@ -11,8 +12,7 @@ const Counter = () => {
           <div className='App'>
             <h1>Counter App</h1>
             <span className='text'>{counter}</span>
-            <ButtonComp counter = {counter}  action = {setCounter}/>
-            
+            <ButtonComp className='btn' counter = {counter}  action = {setCounter}/>
           </div>
           
         );

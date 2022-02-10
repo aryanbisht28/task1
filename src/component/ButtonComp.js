@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './ButtonComp.css'
 
 function ButtonComp(props) {
 
@@ -16,8 +17,8 @@ function ButtonComp(props) {
   }
   return (
     <div>
-      <button onClick={inc}>+</button>
-      <button onClick={dec}>-</button>
+      <button className='inc' onClick={inc}>+</button>
+      <button className='dec' onClick={dec}>-</button>
     </div>
   )
 }
